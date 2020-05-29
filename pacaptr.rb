@@ -1,4 +1,3 @@
-sha256 823ae8b26750fa516448817d9d0b8c41bf4d9e98007cfe9e60a6180ac16448ec
 class Pacaptr < Formula
   desc "Pacman syntax wrapper for many package managers"
   homepage "https://github.com/rami3l/pacaptr"
