@@ -2,12 +2,12 @@ class Pacaptr < Formula
   desc "Pacman syntax wrapper for many package managers"
   homepage "https://github.com/rami3l/pacaptr"
   version "0.1.0-alpha.7"
-  url "https://github.com/rami3l/pacaptr/releases/download/v0.1.0-alpha.7/pacaptr-macos-amd64.tar.gz"
-  sha256 "823ae8b26750fa516448817d9d0b8c41bf4d9e98007cfe9e60a6180ac16448ec"
+  url "https://github.com/rami3l/pacaptr/releases/download/v0.2.0-alpha.2/pacaptr-macos-amd64.tar.gz"
+  sha256 "37a704bb05c71fc71699fbdc3b47f84582b9c0248a6cfec22084a4d143d333f2"
   
   if OS.linux?
-    url "https://github.com/rami3l/pacaptr/releases/download/v0.1.0-alpha.7/pacaptr-linux-amd64.tar.gz"
-    sha256 "da6a81b8f9523bd10b00a453f63ec8349f841a955c9de5ddbb243b31a568b733"
+    url "https://github.com/rami3l/pacaptr/releases/download/v0.2.0-alpha.2/pacaptr-linux-amd64.tar.gz"
+    sha256 "b84162d89f7ffc79f33d4072daea7ba620f14c089d8071f712c42b2f50385bf7"
   end
 
   def install
