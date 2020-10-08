@@ -1,5 +1,7 @@
-# homebrew-pacaptr
-My opinionated homebrew tap.
+# homebrew-tap
+
+My opinionated homebrew tap, a new home for `pacaptr` and more!  
+(Originally [rami3l/homebrew-pacaptr](https://github.com/rami3l/homebrew-pacaptr).)
 
 ## Contents
 
