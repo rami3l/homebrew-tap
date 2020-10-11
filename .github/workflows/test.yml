@@ -31,4 +31,4 @@ jobs:
     steps:
       - name: install
         run: |
-          brew install rami3l/tap/evangelion-clock
+          brew cask install rami3l/tap/evangelion-clock
