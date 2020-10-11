@@ -1,23 +1,34 @@
 # This is a basic workflow to help you get started with Actions
 
-name: install test
+name: test-install
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
-  build:
+  pacaptr:
     runs-on: macos-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v2
-
-      - name: pacaptr
+      - name: install
         run: |
           brew install rami3l/tap/pacaptr
-          pacaptr
+          pacaptr --help
+
+  ouverture:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew install rami3l/tap/ouverture
+          ouverture
+
+  evangelion-clock:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew install rami3l/tap/evangelion-clock
