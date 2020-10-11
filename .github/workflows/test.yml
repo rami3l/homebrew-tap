@@ -24,7 +24,7 @@ jobs:
       - name: install
         run: |
           brew install rami3l/tap/ouverture
-          ouverture
+          ovt
 
   evangelion-clock:
     runs-on: macos-latest
