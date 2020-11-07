@@ -26,6 +26,14 @@ jobs:
           brew install rami3l/tap/ouverture
           ovt
 
+  ting:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew install rami3l/tap/ting
+          ting --help
+
   evangelion-clock:
     runs-on: macos-latest
     steps:
