@@ -40,3 +40,24 @@ jobs:
       - name: install
         run: |
           brew cask install rami3l/tap/evangelion-clock
+
+  affinity-designer:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew cask install rami3l/tap/affinity-designer
+
+  affinity-photo:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew cask install rami3l/tap/affinity-photo
+
+  affinity-publisher:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew cask install rami3l/tap/affinity-publisher
