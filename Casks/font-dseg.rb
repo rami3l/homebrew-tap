@@ -7,59 +7,15 @@ cask "font-dseg" do
     name "DSEG"
     homepage "https://github.com/keshikan/DSEG"
 
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic/DSEG7Classic-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic/DSEG7Classic-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic/DSEG7Classic-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic/DSEG7Classic-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic/DSEG7Classic-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic/DSEG7Classic-Regular.ttf"
-
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic-MINI/DSEG7ClassicMini-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic-MINI/DSEG7ClassicMini-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic-MINI/DSEG7ClassicMini-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic-MINI/DSEG7ClassicMini-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic-MINI/DSEG7ClassicMini-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Classic-MINI/DSEG7ClassicMini-Regular.ttf"
-
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern/DSEG7Modern-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern/DSEG7Modern-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern/DSEG7Modern-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern/DSEG7Modern-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern/DSEG7Modern-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern/DSEG7Modern-Regular.ttf"
-
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern-MINI/DSEG7ModernMini-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern-MINI/DSEG7ModernMini-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern-MINI/DSEG7ModernMini-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern-MINI/DSEG7ModernMini-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern-MINI/DSEG7ModernMini-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG7-Modern-MINI/DSEG7ModernMini-Regular.ttf"
-  
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic/DSEG14Classic-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic/DSEG14Classic-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic/DSEG14Classic-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic/DSEG14Classic-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic/DSEG14Classic-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic/DSEG14Classic-Regular.ttf"
-
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic-MINI/DSEG14ClassicMini-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic-MINI/DSEG14ClassicMini-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic-MINI/DSEG14ClassicMini-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic-MINI/DSEG14ClassicMini-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic-MINI/DSEG14ClassicMini-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Classic-MINI/DSEG14ClassicMini-Regular.ttf"
-
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern/DSEG14Modern-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern/DSEG14Modern-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern/DSEG14Modern-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern/DSEG14Modern-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern/DSEG14Modern-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern/DSEG14Modern-Regular.ttf"
-
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern-MINI/DSEG14ModernMini-Bold.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern-MINI/DSEG14ModernMini-BoldItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern-MINI/DSEG14ModernMini-Italic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern-MINI/DSEG14ModernMini-Light.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern-MINI/DSEG14ModernMini-LightItalic.ttf"
-    font "fonts-DSEG_v#{version.gsub(".", "")}/DSEG14-Modern-MINI/DSEG14ModernMini-Regular.ttf"
+    [
+        "DSEG7-Classic/DSEG7Classic",
+        "DSEG7-Classic-MINI/DSEG7ClassicMini",
+        "DSEG7-Modern/DSEG7Modern",
+        "DSEG7-Modern-MINI/DSEG7ModernMini",
+        "DSEG14-Classic/DSEG14Classic",
+        "DSEG14-Classic-MINI/DSEG14ClassicMini",
+        "DSEG14-Modern/DSEG14Modern", "DSEG14-Modern-MINI/DSEG14ModernMini"
+    ].product(["Bold", "BoldItalic", "Italic", "Light", "LightItalic", "Regular"]).map do
+        |i| font "fonts-DSEG_v#{version.gsub(".", "")}#{i[0]}-#{i[1]}.ttf"
+    end
 end
