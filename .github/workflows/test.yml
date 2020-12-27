@@ -38,26 +38,28 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: install
-        run: |
-          brew cask install rami3l/tap/evangelion-clock
+        run: brew install rami3l/tap/evangelion-clock
 
   affinity-designer:
     runs-on: macos-latest
     steps:
       - name: install
-        run: |
-          brew cask install rami3l/tap/affinity-designer
+        run: brew install rami3l/tap/affinity-designer
 
   affinity-photo:
     runs-on: macos-latest
     steps:
       - name: install
-        run: |
-          brew cask install rami3l/tap/affinity-photo
+        run: brew install rami3l/tap/affinity-photo
 
   affinity-publisher:
     runs-on: macos-latest
     steps:
       - name: install
-        run: |
-          brew cask install rami3l/tap/affinity-publisher
+        run: brew install rami3l/tap/affinity-publisher
+
+  font-dseg:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/font-dseg
