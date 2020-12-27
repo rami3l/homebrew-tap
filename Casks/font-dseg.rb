@@ -24,6 +24,6 @@ cask "font-dseg" do
         "LightItalic",
         "Regular"
     ]).map do
-        |i| font "fonts-DSEG_v#{version.gsub(".", "")}#{i[0]}-#{i[1]}.ttf"
+        |i| font "fonts-DSEG_v#{version.gsub(".", "")}/#{i[0]}-#{i[1]}.ttf"
     end
 end
