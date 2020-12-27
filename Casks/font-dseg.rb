@@ -14,8 +14,16 @@ cask "font-dseg" do
         "DSEG7-Modern-MINI/DSEG7ModernMini",
         "DSEG14-Classic/DSEG14Classic",
         "DSEG14-Classic-MINI/DSEG14ClassicMini",
-        "DSEG14-Modern/DSEG14Modern", "DSEG14-Modern-MINI/DSEG14ModernMini"
-    ].product(["Bold", "BoldItalic", "Italic", "Light", "LightItalic", "Regular"]).map do
+        "DSEG14-Modern/DSEG14Modern",
+        "DSEG14-Modern-MINI/DSEG14ModernMini"
+    ].product([
+        "Bold",
+        "BoldItalic",
+        "Italic",
+        "Light",
+        "LightItalic",
+        "Regular"
+    ]).map do
         |i| font "fonts-DSEG_v#{version.gsub(".", "")}#{i[0]}-#{i[1]}.ttf"
     end
 end
