@@ -63,3 +63,9 @@ jobs:
     steps:
       - name: install
         run: brew install rami3l/tap/font-dseg
+
+  freefilesync:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/freefilesync
