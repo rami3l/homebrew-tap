@@ -1,6 +1,6 @@
 cask "freefilesync" do
     version "11.4"
-    sha256 "48a9bf9aa7e79dee55bcda35446153160ed56abc47df36522cfe2a9e27a755e2"
+    # sha256 "48a9bf9aa7e79dee55bcda35446153160ed56abc47df36522cfe2a9e27a755e2"
 
     # We use the mirror below for installation:
     # https://github.com/suschizu/freefilesync-mirror
