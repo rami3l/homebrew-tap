@@ -43,6 +43,13 @@ jobs:
       - name: install
         run: brew install ./Casks/evangelion-clock.rb
 
+  fractal-clock:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: brew install ./Casks/fractal-clock.rb
+
   affinity-designer:
     runs-on: macos-latest
     steps:
