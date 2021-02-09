@@ -1,6 +1,6 @@
 cask "affinity-photo" do
     version "1.9.0"
-    # sha256 "68dc8e85a6725f15e8d7336829870d92b1f1e88a27501ba11866dfec328e6c9a"
+    sha256 "6da3820998dc8cb6dcb93550963c14554c451c4a746192f5ec4f364ab5669d8f"
 
     # s3-eu-west-1.amazonaws.com was verified as official when first introduced to the cask
     url "https://s3-eu-west-1.amazonaws.com/affinity-update/mac/retail/Affinity%20Photo-#{version}.app.zip"

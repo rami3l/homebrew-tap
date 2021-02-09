@@ -1,6 +1,6 @@
 cask "affinity-publisher" do
     version "1.9.0"
-    # sha256 "68dc8e85a6725f15e8d7336829870d92b1f1e88a27501ba11866dfec328e6c9a"
+    sha256 "9cac31c1cad4771cb7ccdb420dbacc025ab8b84c86fba3eebe8afd4a464003fb"
 
     # s3-eu-west-1.amazonaws.com was verified as official when first introduced to the cask
     url "https://s3-eu-west-1.amazonaws.com/affinity-update/mac/retail/Affinity%20Publisher-#{version}.app.zip"
