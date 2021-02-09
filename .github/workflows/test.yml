@@ -13,4 +13,59 @@ jobs:
     runs-on: macos-latest
     steps:
       # - uses: actions/checkout@v2
-      - run: brew test-bot
+      - name: install
+        run: |
+          brew install rami3l/tap/pacaptr
+          pacaptr --help
+
+  ouverture:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew install rami3l/tap/ouverture
+          ovt
+
+  ting:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: |
+          brew install rami3l/tap/ting
+          ting --help
+
+  evangelion-clock:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/evangelion-clock
+
+  affinity-designer:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/affinity-designer
+
+  affinity-photo:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/affinity-photo
+
+  affinity-publisher:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/affinity-publisher
+
+  font-dseg:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/font-dseg
+
+  freefilesync:
+    runs-on: macos-latest
+    steps:
+      - name: install
+        run: brew install rami3l/tap/freefilesync
