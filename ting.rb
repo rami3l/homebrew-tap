@@ -1,13 +1,13 @@
 class Ting < Formula
     desc "Yet another tcping."
     homepage "https://github.com/rami3l/ting"
-    version "v0.1.4"
-    url "https://github.com/rami3l/ting/releases/download/v0.1.4/ting-macos-amd64.tar.gz"
-    sha256 "32dea1855c8772ac7e16a35b43962cc6cf6fe6fbcef7cf3c06f968e39d933f19"
+    version "v0.1.5"
+    url "https://github.com/rami3l/ting/releases/download/v0.1.5/ting-macos-amd64.tar.gz"
+    sha256 "13731da0e4381ef78eb356bcfa4573bac1807273a95e08d6dadee6cf01d71014"
 
     if OS.linux?
-      url "https://github.com/rami3l/ting/releases/download/v0.1.4/ting-linux-amd64.tar.gz"
-      sha256 "8778d1c2d4ebaf671e104e690026a91566604f02742b26471223da532e386fbb"
+      url "https://github.com/rami3l/ting/releases/download/v0.1.5/ting-linux-amd64.tar.gz"
+      sha256 "cf6d5693462f3f150fdbc478b67ba93e171c2b8ac31bec358b7ff42655d2cdae"
     end
 
     def install
