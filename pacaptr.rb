@@ -1,13 +1,13 @@
 class Pacaptr < Formula
     desc "Pacman syntax wrapper for homebrew, chocolatey, apt, and more."
     homepage "https://github.com/rami3l/pacaptr"
-    version "v0.11.3"
-    url "https://github.com/rami3l/pacaptr/releases/download/v0.11.3/pacaptr-macos-amd64.tar.gz"
-    sha256 "963f3324feeabfc9a8bdb3d79d1d534d3a70fe4aceca0f3dc3c9857df2d5bc21"
+    version "v0.11.4"
+    url "https://github.com/rami3l/pacaptr/releases/download/v0.11.4/pacaptr-macos-amd64.tar.gz"
+    sha256 "bd5b7aa4f6233135af4d3004a4ae7a81e335a19e4ed8fc3f21613bf56eb03546"
     
     if OS.linux?
-      url "https://github.com/rami3l/pacaptr/releases/download/v0.11.3/pacaptr-linux-amd64.tar.gz"
-      sha256 "f5ad4f3d5c08d910329d1bcca46b1ac7221b720c13ad74e7c211fab73ac46658"
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.11.4/pacaptr-linux-amd64.tar.gz"
+      sha256 "e63af3998698fc675e51b99aa5092257796f04e90e9df2863fdac91c8d3475f1"
     end
 
     def install
