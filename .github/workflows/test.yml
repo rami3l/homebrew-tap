@@ -50,27 +50,6 @@ jobs:
       - name: install
         run: brew install ./Casks/fractal-clock.rb
 
-  affinity-designer:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: install
-        run: brew install ./Casks/affinity-designer.rb
-
-  affinity-photo:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: install
-        run: brew install ./Casks/affinity-photo.rb
-
-  affinity-publisher:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: install
-        run: brew install ./Casks/affinity-publisher.rb
-
   font-dseg:
     runs-on: macos-latest
     steps:

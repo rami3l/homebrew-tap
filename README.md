@@ -44,12 +44,10 @@ My opinionated homebrew tap.
   brew cask install rami3l/tap/fractal-clock
   ```
 
-- [`affinity-*`](https://affinity.serif.com/): Graphic design suite from Serif.
+- [`keshikan/DSEG/`](https://github.com/keshikan/DSEG): A font inspired by 7/14-segment LCD displays.
 
   ```bash
-  brew cask install rami3l/tap/affinity-designer
-  brew cask install rami3l/tap/affinity-photo
-  brew cask install rami3l/tap/affinity-publisher
+  brew cask install rami3l/tap/font-dseg
   ```
 
 ## Notes
