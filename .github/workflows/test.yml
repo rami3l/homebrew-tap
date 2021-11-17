@@ -34,7 +34,7 @@ jobs:
       - name: install
         run: |
           brew install ./alire.rb
-          alr help
+          alr help | grep USAGE
 
   ting:
     runs-on: macos-latest
