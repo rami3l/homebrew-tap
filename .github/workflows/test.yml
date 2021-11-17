@@ -27,6 +27,15 @@ jobs:
           brew install ./ouverture.rb
           ovt
 
+  alire:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: |
+          brew install ./alire.rb
+          alr help | grep USAGE
+
   ting:
     runs-on: macos-latest
     steps:

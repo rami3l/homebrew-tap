@@ -32,22 +32,28 @@ My opinionated homebrew tap.
 
 ## Extras
 
+- [`alire-project/alire`](https://github.com/alire-project/alire/releases): A package manager for the Ada programming language.
+
+  ```bash
+  brew install rami3l/tap/alire
+  ```
+
 - [`Wandmalfarbe/evangelion-clock-screensaver`](https://github.com/Wandmalfarbe/evangelion-clock-screensaver): A digital clock screensaver for mac inspired by the graphical interfaces from Neon Genesis Evengelion.
 
   ```bash
-  brew cask install rami3l/tap/evangelion-clock
+  brew install rami3l/tap/evangelion-clock
   ```
 
 - [`phreakocious/FractalClock`](https://github.com/phreakocious/FractalClock): A fork of the fabulous Fractal Clock screen saver by Rob Mayoff.
 
   ```bash
-  brew cask install rami3l/tap/fractal-clock
+  brew install rami3l/tap/fractal-clock
   ```
 
-- [`keshikan/DSEG/`](https://github.com/keshikan/DSEG): A font inspired by 7/14-segment LCD displays.
+- [`keshikan/DSEG`](https://github.com/keshikan/DSEG): A font inspired by 7/14-segment LCD displays.
 
   ```bash
-  brew cask install rami3l/tap/font-dseg
+  brew install rami3l/tap/font-dseg
   ```
 
 ## Notes
