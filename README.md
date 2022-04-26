@@ -56,6 +56,12 @@ My opinionated homebrew tap.
   brew install rami3l/tap/font-dseg
   ```
 
+- [`naver/d2codingfont`](https://github.com/naver/d2codingfont): A condensed coding font based on Nanumbarun Gothic with optional ligatures.
+
+  ```bash
+  brew install rami3l/tap/font-d2coding-all
+  ```
+
 ## Notes
 
 - This repo is originally called [`rami3l/homebrew-pacaptr`](https://github.com/rami3l/homebrew-pacaptr). To perform the migration, just run:
