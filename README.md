@@ -32,7 +32,7 @@ My opinionated homebrew tap.
 
 ## Extras
 
-- [`alire-project/alire`](https://github.com/alire-project/alire/releases): A package manager for the Ada programming language.
+- [`alire-project/alire`](https://github.com/alire-project/alire): A package manager for the Ada programming language.
 
   ```bash
   brew install rami3l/tap/alire
