@@ -15,7 +15,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: |
           brew install ./pacaptr.rb
@@ -27,7 +27,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: |
           brew install ./alire.rb
@@ -39,7 +39,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: |
           brew install ./ting.rb
@@ -48,7 +48,7 @@ jobs:
   ouverture:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: |
           brew install ./ouverture.rb
@@ -57,27 +57,27 @@ jobs:
   evangelion-clock:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: brew install ./Casks/evangelion-clock.rb
 
   fractal-clock:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: brew install ./Casks/fractal-clock.rb
 
   font-dseg:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: brew install ./Casks/font-dseg.rb
 
   font-d2coding-all:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: install
         run: brew install ./Casks/font-d2coding-all.rb
