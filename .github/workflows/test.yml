@@ -16,6 +16,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
+      - if: startsWith(${{ matrix.os }}, "ubuntu")
+        run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: install
         run: |
           brew install ./pacaptr.rb
@@ -28,6 +30,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
+      - if: startsWith(${{ matrix.os }}, "ubuntu")
+        run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: install
         run: |
           brew install ./alire.rb
@@ -40,6 +44,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
+      - if: startsWith(${{ matrix.os }}, "ubuntu")
+        run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: install
         run: |
           brew install ./ting.rb
