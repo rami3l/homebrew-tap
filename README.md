@@ -62,6 +62,12 @@ My opinionated homebrew tap.
   brew install rami3l/tap/font-d2coding-all
   ```
 
+- [`yuru7/Firge`](https://github.com/yuru7/Firge): A programming font synthesized from Fira Mono and Genma Shin Gothic (Nerd Font version).
+
+  ```bash
+  brew install rami3l/tap/font-firgenerd
+  ```
+
 ## Notes
 
 - This repo is originally called [`rami3l/homebrew-pacaptr`](https://github.com/rami3l/homebrew-pacaptr). To perform the migration, just run:
