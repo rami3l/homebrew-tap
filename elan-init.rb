@@ -1,5 +1,5 @@
 class ElanInit < Formula
-    desc "A package manager for the Ada programming language"
+    desc "A version manager for the Lean programming language"
     homepage "https://github.com/leanprover/elan"
     version "1.4.2"
 

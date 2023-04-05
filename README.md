@@ -38,6 +38,12 @@ My opinionated homebrew tap.
   brew install rami3l/tap/alire
   ```
 
+- [`leanprover/elan`](https://github.com/leanprover/elan): A version manager for the Lean programming language
+
+  ```bash
+  brew install rami3l/tap/elan-init
+  ```
+
 - [`Wandmalfarbe/evangelion-clock-screensaver`](https://github.com/Wandmalfarbe/evangelion-clock-screensaver): A digital clock screensaver for mac inspired by the graphical interfaces from Neon Genesis Evengelion.
 
   ```bash
