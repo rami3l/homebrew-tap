@@ -51,6 +51,20 @@ jobs:
           brew install ./ting.rb
           ting --help
 
+  elan-init:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - if: startsWith(${{ matrix.os }}, "ubuntu")
+        run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
+      - name: install
+        run: |
+          brew install ./elan-init.rb
+          elan-init --help | grep 'The installer for elan'
+
   ouverture:
     runs-on: macos-latest
     steps:
@@ -60,37 +74,14 @@ jobs:
           brew install ./ouverture.rb
           ovt
 
-  evangelion-clock:
+  casks:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       - name: install
-        run: brew install ./Casks/evangelion-clock.rb
-
-  fractal-clock:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: install
-        run: brew install ./Casks/fractal-clock.rb
-
-  font-dseg:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: install
-        run: brew install ./Casks/font-dseg.rb
-
-  font-d2coding-all:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: install
-        run: brew install ./Casks/font-d2coding-all.rb
-
-  font-firgenerd:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: install
-        run: brew install ./Casks/font-firgenerd.rb
+        run: |
+          brew install ./Casks/evangelion-clock.rb
+          brew install ./Casks/fractal-clock.rb
+          brew install ./Casks/font-dseg.rb
+          brew install ./Casks/font-d2coding-all.rb
+          brew install ./Casks/font-firgenerd.rb
