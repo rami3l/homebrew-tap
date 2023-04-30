@@ -51,20 +51,6 @@ jobs:
           brew install ./ting.rb
           ting --help
 
-  elan-init:
-    strategy:
-      matrix:
-        os: [macos-latest, ubuntu-latest]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - uses: actions/checkout@v3
-      - if: startsWith(${{ matrix.os }}, "ubuntu")
-        run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
-      - name: install
-        run: |
-          brew install ./elan-init.rb
-          elan-init --help | grep 'The installer for elan'
-
   ouverture:
     runs-on: macos-latest
     steps:
