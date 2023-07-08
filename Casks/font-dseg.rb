@@ -1,9 +1,8 @@
 cask "font-dseg" do
     version "0.46"
     sha256 "a6c2f43520971ca8067262e78d49025e605f749bf716ec5394bad9a0ee1c238c"
-  
+
     url "https://github.com/keshikan/DSEG/releases/download/v#{version}/fonts-DSEG_v#{version.gsub(".", "")}.zip"
-    appcast "https://github.com/keshikan/DSEG/releases.atom"
     name "DSEG"
     homepage "https://github.com/keshikan/DSEG"
 
