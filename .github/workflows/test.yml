@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
-      - name: install
+      - name: Test install
         run: |
           brew install ./pacaptr.rb
           pacaptr --help
@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v3
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
-      - name: install
+      - name: Test install
         run: |
           brew install ./alire.rb
           alr help | grep USAGE
@@ -46,16 +46,25 @@ jobs:
       - uses: actions/checkout@v3
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
-      - name: install
+      - name: Test install
         run: |
           brew install ./ting.rb
           ting --help
+
+  claveilleur:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test install
+        run: |
+          brew install ./claveilleur.rb
+          claveilleur --help
 
   ouverture:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: install
+      - name: Test install
         run: |
           brew install ./ouverture.rb
           ovt
@@ -64,7 +73,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: install
+      - name: Test install
         run: |
           brew install ./Casks/evangelion-clock.rb
           brew install ./Casks/fractal-clock.rb
