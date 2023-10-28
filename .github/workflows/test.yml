@@ -75,8 +75,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install ./Casks/evangelion-clock.rb
-          brew install ./Casks/fractal-clock.rb
-          brew install ./Casks/font-dseg.rb
-          brew install ./Casks/font-d2coding-all.rb
-          brew install ./Casks/font-firgenerd.rb
+          brew install ./Casks/*.rb

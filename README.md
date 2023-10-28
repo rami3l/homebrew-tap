@@ -50,10 +50,10 @@ My opinionated homebrew tap.
   brew install rami3l/tap/evangelion-clock
   ```
 
-- [`phreakocious/FractalClock`](https://github.com/phreakocious/FractalClock): A fork of the fabulous Fractal Clock screen saver by Rob Mayoff.
+- [`naver/d2codingfont`](https://github.com/naver/d2codingfont): A condensed coding font based on Nanumbarun Gothic with optional ligatures.
 
   ```bash
-  brew install rami3l/tap/fractal-clock
+  brew install rami3l/tap/font-d2coding-all
   ```
 
 - [`keshikan/DSEG`](https://github.com/keshikan/DSEG): A font inspired by 7/14-segment LCD displays.
@@ -62,16 +62,22 @@ My opinionated homebrew tap.
   brew install rami3l/tap/font-dseg
   ```
 
-- [`naver/d2codingfont`](https://github.com/naver/d2codingfont): A condensed coding font based on Nanumbarun Gothic with optional ligatures.
-
-  ```bash
-  brew install rami3l/tap/font-d2coding-all
-  ```
-
 - [`yuru7/Firge`](https://github.com/yuru7/Firge): A programming font synthesized from Fira Mono and Genma Shin Gothic (Nerd Font version).
 
   ```bash
   brew install rami3l/tap/font-firgenerd
+  ```
+
+- [`shytikov/pragmasevka`](https://github.com/shytikov/pragmasevka): A Pragmata Pro-like condensed coding font based on Iosevka.
+
+  ```bash
+  brew install rami3l/tap/font-pragmasevka-nf
+  ```
+
+- [`phreakocious/FractalClock`](https://github.com/phreakocious/FractalClock): A fork of the fabulous Fractal Clock screen saver by Rob Mayoff.
+
+  ```bash
+  brew install rami3l/tap/fractal-clock
   ```
 
 ## Notes
