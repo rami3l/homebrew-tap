@@ -5,12 +5,12 @@
 class Pacaptr < Formula
   desc "Pacman-like syntax wrapper for many package managers."
   homepage "https://github.com/rami3l/pacaptr"
-  version "0.19.2"
+  version "0.20.0"
   license "GPL-3.0-only"
 
   on_macos do
-    url "https://github.com/rami3l/pacaptr/releases/download/v0.19.2/pacaptr-darwin-universal2.tar.gz"
-    sha256 "1b384ef2f97bf9e4adc3bb593ec4bf136ef70e30e52ffdfe1bbacb6bd98ffa3c"
+    url "https://github.com/rami3l/pacaptr/releases/download/v0.20.0/pacaptr-darwin-universal2.tar.gz"
+    sha256 "f2a93db76bdcc5bdc81c05864009a0880358736a1dc836035cab3b6446ab610d"
 
     def install
       bin.install "pacaptr"
@@ -19,16 +19,16 @@ class Pacaptr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rami3l/pacaptr/releases/download/v0.19.2/pacaptr-linux-arm64.tar.gz"
-      sha256 "1467143ff827eb71c2d5773c4d203e180dd000857dac62c3d4e09d9deedac427"
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.20.0/pacaptr-linux-arm64.tar.gz"
+      sha256 "5dc36e46d73dec2e9c38880b73fe47549214cba51ab71c217328cd5be826a0cf"
 
       def install
         bin.install "pacaptr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rami3l/pacaptr/releases/download/v0.19.2/pacaptr-linux-amd64.tar.gz"
-      sha256 "a50a1c1dce6308d228a7aa12fa914f5e3e700179cbaaf6012cfcfa1b46973bb9"
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.20.0/pacaptr-linux-amd64.tar.gz"
+      sha256 "c73010831a97192170fab9975b580a39780cdbadfc60afee1c2ef48a5672d941"
 
       def install
         bin.install "pacaptr"
