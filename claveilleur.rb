@@ -5,18 +5,20 @@
 class Claveilleur < Formula
   desc "An input source switching daemon for macOS."
   homepage "https://github.com/rami3l/Claveilleur"
-  version "0.1.0-alpha3"
+  version "0.1.0-alpha4"
   license "BSD-2-Clause"
   depends_on :macos
 
   on_macos do
-    url "https://github.com/rami3l/Claveilleur/releases/download/v0.1.0-alpha3/claveilleur_darwin_universal2.tar.gz"
-    sha256 "a86be8030ff739f37f3efd0936af8a8a788c5965ef2f79085a6fb209c7084c77"
+    url "https://github.com/rami3l/Claveilleur/releases/download/v0.1.0-alpha4/claveilleur_darwin_universal2.tar.gz"
+    sha256 "3e05e752db1328dd903d1493d0f24e28f793f2a8520d217122b68ecbc27beaaf"
 
     def install
       bin.install "claveilleur"
     end
   end
+
+  head "https://github.com/rami3l/Claveilleur.git"
 
   test do
     system "#{bin}/claveilleur --help"
