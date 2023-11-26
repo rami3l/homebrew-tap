@@ -13,7 +13,11 @@ class Pacaptr < Formula
     sha256 "f2a93db76bdcc5bdc81c05864009a0880358736a1dc836035cab3b6446ab610d"
 
     def install
-      bin.install "pacaptr"
+      if build.head? then
+        system "cargo", "install", *std_cargo_args
+      else
+        bin.install "pacaptr"
+      end
     end
   end
 
@@ -23,7 +27,11 @@ class Pacaptr < Formula
       sha256 "5dc36e46d73dec2e9c38880b73fe47549214cba51ab71c217328cd5be826a0cf"
 
       def install
-        bin.install "pacaptr"
+        if build.head? then
+          system "cargo", "install", *std_cargo_args
+        else
+          bin.install "pacaptr"
+        end
       end
     end
     if Hardware::CPU.intel?
@@ -31,9 +39,19 @@ class Pacaptr < Formula
       sha256 "c73010831a97192170fab9975b580a39780cdbadfc60afee1c2ef48a5672d941"
 
       def install
-        bin.install "pacaptr"
+        if build.head? then
+          system "cargo", "install", *std_cargo_args
+        else
+          bin.install "pacaptr"
+        end
       end
     end
+  end
+
+  head "https://github.com/rami3l/pacaptr.git"
+
+  head do
+    depends_on "rust" => :build
   end
 
   test do
