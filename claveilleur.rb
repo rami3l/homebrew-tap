@@ -5,20 +5,29 @@
 class Claveilleur < Formula
   desc "An input source switching daemon for macOS."
   homepage "https://github.com/rami3l/Claveilleur"
-  version "0.1.0-alpha4"
+  version "0.1.0-alpha5"
   license "BSD-2-Clause"
   depends_on :macos
 
   on_macos do
-    url "https://github.com/rami3l/Claveilleur/releases/download/v0.1.0-alpha4/claveilleur_darwin_universal2.tar.gz"
-    sha256 "3e05e752db1328dd903d1493d0f24e28f793f2a8520d217122b68ecbc27beaaf"
+    url "https://github.com/rami3l/Claveilleur/releases/download/v0.1.0-alpha5/claveilleur_darwin_universal2.tar.gz"
+    sha256 "44c18d6d6664e7997baec35946b6fd22265dd4a29775fc5b10d8ce07b05164bb"
 
     def install
-      bin.install "claveilleur"
+      base_dir = "."
+      if build.head? then
+        system "swift", "build", "--disable-sandbox", "-c", "release"
+        base_dir = `swift build --show-bin-path -c release`.strip
+      end
+      bin.install "#{base_dir}/claveilleur"
     end
   end
 
   head "https://github.com/rami3l/Claveilleur.git"
+
+  head do
+    depends_on xcode: ["14.3", :build]
+  end
 
   test do
     system "#{bin}/claveilleur --help"
