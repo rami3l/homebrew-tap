@@ -60,6 +60,15 @@ jobs:
           brew install ./claveilleur.rb
           claveilleur --help
 
+  claveilleur-head:
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test install
+        run: |
+          brew install ./claveilleur.rb --HEAD
+          claveilleur --help
+
   ouverture:
     runs-on: macos-latest
     steps:

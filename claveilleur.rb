@@ -24,7 +24,10 @@ class Claveilleur < Formula
   end
 
   head "https://github.com/rami3l/Claveilleur.git"
-  depends_on xcode: ["14.3", :build]
+
+  head do
+    depends_on xcode: ["14.3", :build]
+  end
 
   test do
     system "#{bin}/claveilleur --help"
