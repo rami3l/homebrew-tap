@@ -1,6 +1,6 @@
 cask "font-pragmasevka-nf" do
-    version "1.6.5"
-    sha256 "a5260c42f5b132603f461a4701d2d199a7c33679a42053a9ffd1cda44422dc2e"
+    version "1.6.6"
+    sha256 "54214a043546fb30f8a8952de9681d7b7e20a664ebccdf3cc9ef73cab0ffa88a"
 
     name "Pragmasevka NF"
     homepage "https://github.com/shytikov/pragmasevka"
