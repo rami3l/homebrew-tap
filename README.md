@@ -74,6 +74,12 @@ My opinionated homebrew tap.
   brew install rami3l/tap/font-pragmasevka-nf
   ```
 
+- [`anka-coder-narrow`](https://code.google.com/archive/p/anka-coder-fonts): The condensed variant of the Anka/Coder coding font.
+
+  ```bash
+  brew install rami3l/tap/font-anka-coder-narrow
+  ```
+
 - [`phreakocious/FractalClock`](https://github.com/phreakocious/FractalClock): A fork of the fabulous Fractal Clock screen saver by Rob Mayoff.
 
   ```bash
