@@ -15,4 +15,4 @@ cask "font-firgenerd" do
     font "FirgeNerd_v#{version}/Firge35Nerd-Bold.ttf"
     font "FirgeNerd_v#{version}/Firge35NerdConsole-Regular.ttf"
     font "FirgeNerd_v#{version}/Firge35NerdConsole-Bold.ttf"
-  end
+end
