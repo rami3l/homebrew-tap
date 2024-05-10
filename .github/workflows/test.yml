@@ -92,6 +92,14 @@ jobs:
           brew install ./ouverture.rb
           ovt
 
+  neovim-nightly:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test install
+        run: |
+          brew test ./neovim-nightly.rb
+
   casks:
     runs-on: macos-latest
     steps:
