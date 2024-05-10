@@ -29,8 +29,13 @@ end
 class NeovimNightly < Formula
   desc "Ambitious Vim-fork focused on extensibility and agility"
   homepage "https://neovim.io/"
-  arch arm: 'arm64', intel: 'x86_64'
-  url "https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-#{arch}.tar.gz"
+
+  if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-arm64.tar.gz"
+  elsif Hardware::CPU.intel?
+    url "https://github.com/neovim/neovim/releases/download/nightly/nvim-macos-x86_64.tar.gz"
+  end
+
   version VersionFetcher.new.version.to_s
   # sha256
   license "Apache-2.0"
@@ -44,10 +49,10 @@ class NeovimNightly < Formula
     # end
   end
 
-  binary "nvim-macos-#{arch}/bin/nvim"
-
-  postflight do
-    system_command 'xattr', args: ['-c', "#{staged_path}/nvim-macos-#{arch}/bin/nvim"]
+  def install
+    sources = Dir.entries(".")
+    sources -= Dir.glob(".*")
+    cp_r sources, prefix.to_s
   end
 
   test do
