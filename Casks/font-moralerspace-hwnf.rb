@@ -1,6 +1,6 @@
 cask "font-moralerspace-hwnf" do
-    version "1.0.0"
-    sha256 "0b9f5d85cb50452a91fcc1a16d037d01089511d919962a3213926917689cc0e8"
+    version "1.0.2"
+    sha256 "dcdccaf2620422e63f00f39589afc5b5052fe62d8fa6ec1a8c244da3e6982868"
 
     url "https://github.com/yuru7/moralerspace/releases/download/v#{version}/MoralerspaceHWNF_v#{version}.zip"
     name "Moralerspace HWNF"
