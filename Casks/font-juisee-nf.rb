@@ -1,6 +1,6 @@
 cask "font-juisee-nf" do
-    version "0.1.1"
-    sha256 "169c5fd319a2b359deaec576471aa93804fca410ddac750bc2522aa5af4b928f"
+    version "0.2.0"
+    sha256 "89908469a147c2a558890e58214b797fb1561d3204164fce670bb1b83563fd1e"
 
     url "https://github.com/yuru7/juisee/releases/download/v#{version}/Juisee_NF_v#{version}.zip"
     name "Juisee NF"
