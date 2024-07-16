@@ -20,7 +20,7 @@ jobs:
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
         run: |
-          brew install ./pacaptr.rb
+          brew install Formula/pacaptr.rb
           pacaptr --help
 
   pacaptr-head:
@@ -34,7 +34,7 @@ jobs:
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
         run: |
-          brew install ./pacaptr.rb --HEAD
+          brew install Formula/pacaptr.rb --HEAD
           pacaptr --help
 
   alire:
@@ -48,7 +48,7 @@ jobs:
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
         run: |
-          brew install ./alire.rb
+          brew install Formula/alire.rb
           alr help | grep USAGE
 
   ting:
@@ -62,7 +62,7 @@ jobs:
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
         run: |
-          brew install ./ting.rb
+          brew install Formula/ting.rb
           ting --help
 
   claveilleur:
@@ -71,16 +71,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install ./claveilleur.rb
+          brew install Formula/claveilleur.rb
           claveilleur --help
 
   claveilleur-head:
-    runs-on: macos-13
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install ./claveilleur.rb --HEAD
+          brew install Formula/claveilleur.rb --HEAD
           claveilleur --help
 
   ouverture:
@@ -89,7 +89,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install ./ouverture.rb
+          brew install Formula/ouverture.rb
           ovt
 
   neovim-nightly:
@@ -98,7 +98,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install ./neovim-nightly.rb
+          brew install Formula/neovim-nightly.rb
           nvim --help
 
   casks:
@@ -107,4 +107,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install ./Casks/*.rb
+          brew install Casks/*.rb
