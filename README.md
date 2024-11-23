@@ -10,11 +10,20 @@ My opinionated homebrew tap.
   brew install rami3l/tap/pacaptr
   ```
 
-- [`Claveilleur`](https://github.com/rami3l/Claveilleur): An input source switching daemon for macOS.
+- [`clavy`](https://github.com/rami3l/clavy): An input source switching daemon for macOS.
 
   ```bash
-  brew install rami3l/tap/claveilleur
+  brew install rami3l/tap/clavy
   ```
+
+  > **TIP:**
+  > To migrate from `claveilleur`, please stop and uninstall the service before uninstalling the formula:
+  >
+  > ```bash
+  > claveilleur --stop-service && claveilleur --uninstall-service
+  > ```
+  >
+  > Now you can uninstall `claveilleur` and replace it with `clavy`.
 
 - [`Ouverture`](https://github.com/rami3l/Ouverture): A default application modifier for macOS.
 
