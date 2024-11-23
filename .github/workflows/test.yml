@@ -51,23 +51,23 @@ jobs:
           brew install Formula/ting.rb
           ting --help
 
-  claveilleur:
+  clavy:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install Formula/claveilleur.rb
-          claveilleur --help
+          brew install Formula/clavy.rb
+          clavy --help
 
-  claveilleur-head:
+  clavy-head:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          brew install Formula/claveilleur.rb --HEAD
-          claveilleur --help
+          brew install Formula/clavy.rb --HEAD
+          clavy --help
 
   ouverture:
     runs-on: macos-latest
