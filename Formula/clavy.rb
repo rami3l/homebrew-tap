@@ -5,12 +5,12 @@
 class Clavy < Formula
   desc "An input source switching daemon for macOS."
   homepage "https://github.com/rami3l/clavy"
-  version "0.1.0-alpha7"
+  version "0.1.0-alpha8"
   license "GPL-3.0-only"
   depends_on :macos
 
-  url "https://github.com/rami3l/clavy/releases/download/v0.1.0-alpha7/clavy_darwin_universal2.tar.gz"
-  sha256 "4168bac0110c13ca74832eb70015146fbe9ea7d4fd6a61ef1cb3c9c5f5c5647d"
+  url "https://github.com/rami3l/clavy/releases/download/v0.1.0-alpha8/clavy_darwin_universal2.tar.gz"
+  sha256 "efe5364b56327d5fa6549c8c49151efc5ff6e6e886b84445b87e6ea07cf1ea1c"
 
   def install
     if build.head? then
