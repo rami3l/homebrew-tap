@@ -5,12 +5,12 @@
 class Pacaptr < Formula
   desc "Pacman-like syntax wrapper for many package managers."
   homepage "https://github.com/rami3l/pacaptr"
-  version "0.22.0"
+  version "0.23.0"
   license "GPL-3.0-only"
 
   on_macos do
-    url "https://github.com/rami3l/pacaptr/releases/download/v0.22.0/pacaptr-darwin-universal2.tar.gz"
-    sha256 "e991f42f4fb4216599071567dad27cdf766b02ee2ffad7521c46ecda7739326f"
+    url "https://github.com/rami3l/pacaptr/releases/download/v0.23.0/pacaptr-darwin-universal2.tar.gz"
+    sha256 "aa37c4108edcab4ace8a6a52e6de309be5adc361f0bc83b25451711aa5ecb872"
 
     def install
       if build.head? then
@@ -22,10 +22,10 @@ class Pacaptr < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rami3l/pacaptr/releases/download/v0.22.0/pacaptr-linux-amd64.tar.gz"
-        sha256 "a0bb95975ba7cd52dec6df266f6e154efdb68b79f1375d0ab8c969cca984dc20"
+        url "https://github.com/rami3l/pacaptr/releases/download/v0.23.0/pacaptr-linux-amd64.tar.gz"
+        sha256 "b3125d77e949d1c83d3a8195a5cdcf3b4d083d61e253adba9a91c80538a16459"
 
         def install
           if build.head? then
@@ -36,10 +36,10 @@ class Pacaptr < Formula
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rami3l/pacaptr/releases/download/v0.22.0/pacaptr-linux-arm64.tar.gz"
-        sha256 "1901c56b1ef610e68805c7b8fbc1d99e0b311e0b9eb55f5bd4b4f07a78a01054"
+        url "https://github.com/rami3l/pacaptr/releases/download/v0.23.0/pacaptr-linux-arm64.tar.gz"
+        sha256 "02841d155ee76d3624c7c04426eefea15ccd892661fa90e05e70c7443931204e"
 
         def install
           if build.head? then
