@@ -93,7 +93,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test install
         run: |
-          # Installing ghostty currently requires org membership,
-          # so we skip it in this test for now.
-          rm Casks/ghostty.rb
           brew install Casks/*.rb
