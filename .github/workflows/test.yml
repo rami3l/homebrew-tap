@@ -88,6 +88,16 @@ jobs:
           brew install Formula/clavy.rb --HEAD
           clavy --help
 
+  paneru-head:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Test install
+        run: |
+          brew update
+          brew install Formula/paneru.rb --HEAD
+          paneru --help
+
   ouverture:
     runs-on: macos-latest
     steps:
