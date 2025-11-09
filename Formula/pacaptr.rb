@@ -5,12 +5,12 @@
 class Pacaptr < Formula
   desc "Pacman-like syntax wrapper for many package managers."
   homepage "https://github.com/rami3l/pacaptr"
-  version "0.23.0"
+  version "0.23.1"
   license "GPL-3.0-only"
 
   on_macos do
-    url "https://github.com/rami3l/pacaptr/releases/download/v0.23.0/pacaptr-darwin-universal2.tar.gz"
-    sha256 "aa37c4108edcab4ace8a6a52e6de309be5adc361f0bc83b25451711aa5ecb872"
+    url "https://github.com/rami3l/pacaptr/releases/download/v0.23.1/pacaptr-darwin-universal2.tar.gz"
+    sha256 "98c9a2874f3d2803bcff44347209d400d383c00f8f8e65da9e856fe48cc137c2"
 
     def install
       if build.head? then
@@ -22,31 +22,25 @@ class Pacaptr < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/rami3l/pacaptr/releases/download/v0.23.0/pacaptr-linux-amd64.tar.gz"
-        sha256 "b3125d77e949d1c83d3a8195a5cdcf3b4d083d61e253adba9a91c80538a16459"
-
-        def install
-          if build.head? then
-            system "cargo", "install", *std_cargo_args
-          else
-            bin.install "pacaptr"
-          end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.23.1/pacaptr-linux-amd64.tar.gz"
+      sha256 "4cb71667c81a4aeb0f2d89c3c03d70ddd1d5dfad1fa5f7a82b742f7957fc75c8"
+      def install
+        if build.head? then
+          system "cargo", "install", *std_cargo_args
+        else
+          bin.install "pacaptr"
         end
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/rami3l/pacaptr/releases/download/v0.23.0/pacaptr-linux-arm64.tar.gz"
-        sha256 "02841d155ee76d3624c7c04426eefea15ccd892661fa90e05e70c7443931204e"
-
-        def install
-          if build.head? then
-            system "cargo", "install", *std_cargo_args
-          else
-            bin.install "pacaptr"
-          end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.23.1/pacaptr-linux-arm64.tar.gz"
+      sha256 "1ae6fdaf309770c707daf4f61f2f8f1fb598871d56df461413e9ba8579feca76"
+      def install
+        if build.head? then
+          system "cargo", "install", *std_cargo_args
+        else
+          bin.install "pacaptr"
         end
       end
     end
