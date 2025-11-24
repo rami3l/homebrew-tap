@@ -18,7 +18,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
@@ -32,7 +32,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
@@ -47,7 +47,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
@@ -61,7 +61,7 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - if: startsWith(${{ matrix.os }}, "ubuntu")
         run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Test install
@@ -72,7 +72,7 @@ jobs:
   clavy:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Test install
         run: |
           brew install Formula/clavy.rb
@@ -81,7 +81,7 @@ jobs:
   clavy-head:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Test install
         run: |
           brew update
@@ -91,7 +91,7 @@ jobs:
   paneru-head:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Test install
         run: |
           brew update
@@ -101,7 +101,7 @@ jobs:
   ouverture:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Test install
         run: |
           brew install Formula/ouverture.rb
@@ -110,7 +110,7 @@ jobs:
   neovim-nightly:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Test install
         run: |
           brew install Formula/neovim-nightly.rb
@@ -119,7 +119,7 @@ jobs:
   casks:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Test install
         run: |
           brew install Casks/*.rb
