@@ -107,15 +107,6 @@ jobs:
           brew install Formula/ouverture.rb
           ovt
 
-  neovim-nightly:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v6
-      - name: Test install
-        run: |
-          brew install Formula/neovim-nightly.rb
-          nvim --help
-
   casks:
     runs-on: macos-latest
     steps:
