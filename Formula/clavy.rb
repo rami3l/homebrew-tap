@@ -5,14 +5,14 @@
 class Clavy < Formula
   desc "An input source switching daemon for macOS."
   homepage "https://github.com/rami3l/clavy"
-  version "0.1.0-alpha9"
+  version "0.1.0"
   license "GPL-3.0-only"
   depends_on :macos
 
-  url "https://github.com/rami3l/clavy/releases/download/v0.1.0-alpha9/clavy_darwin_universal2.tar.gz"
-  sha256 "0ea3ad0d2c93a3b71a6f0189ade18a7c33b27a0f44f85a4bc5477fcb2627976c"
+  url "https://github.com/rami3l/clavy/releases/download/v0.1.0/clavy_darwin_universal2.tar.gz"
+  sha256 "d99a04982f15e7efa7f1825f4d59e31cd61fa2cba450b21d5fee6478c2f9fa66"
 
-  def install
+  define_method(:install) do
     if build.head? then
       system "cargo", "install", *std_cargo_args
     else
