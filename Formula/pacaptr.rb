@@ -5,14 +5,14 @@
 class Pacaptr < Formula
   desc "Pacman-like syntax wrapper for many package managers."
   homepage "https://github.com/rami3l/pacaptr"
-  version "0.23.1"
+  version "0.23.2"
   license "GPL-3.0-only"
 
   on_macos do
-    url "https://github.com/rami3l/pacaptr/releases/download/v0.23.1/pacaptr-darwin-universal2.tar.gz"
-    sha256 "98c9a2874f3d2803bcff44347209d400d383c00f8f8e65da9e856fe48cc137c2"
+    url "https://github.com/rami3l/pacaptr/releases/download/v0.23.2/pacaptr-darwin-universal2.tar.gz"
+    sha256 "6788164c7980d1d9320babe9be1bb2ea7ccd72820aa05587928d0511893447cc"
 
-    def install
+    define_method(:install) do
       if build.head? then
         system "cargo", "install", *std_cargo_args
       else
@@ -23,9 +23,9 @@ class Pacaptr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rami3l/pacaptr/releases/download/v0.23.1/pacaptr-linux-amd64.tar.gz"
-      sha256 "4cb71667c81a4aeb0f2d89c3c03d70ddd1d5dfad1fa5f7a82b742f7957fc75c8"
-      def install
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.23.2/pacaptr-linux-amd64.tar.gz"
+      sha256 "1c2f9ee938078486437694bab45b1bb79346e8ea8f6905f343de0ac4d3c94eb2"
+      define_method(:install) do
         if build.head? then
           system "cargo", "install", *std_cargo_args
         else
@@ -34,9 +34,9 @@ class Pacaptr < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rami3l/pacaptr/releases/download/v0.23.1/pacaptr-linux-arm64.tar.gz"
-      sha256 "1ae6fdaf309770c707daf4f61f2f8f1fb598871d56df461413e9ba8579feca76"
-      def install
+      url "https://github.com/rami3l/pacaptr/releases/download/v0.23.2/pacaptr-linux-arm64.tar.gz"
+      sha256 "0e39e3f7b1f3a3b1d1e8c198f639aeb9ca433e6d08197abb28f8eebe9fe8b67f"
+      define_method(:install) do
         if build.head? then
           system "cargo", "install", *std_cargo_args
         else
